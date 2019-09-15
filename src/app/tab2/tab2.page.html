@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content *ngFor = 'let pais of paises'>
+    <ion-card-header>
+      <img [src]="pais.flag" [title]="paises.name">
+      <ion-label>Detalles</ion-label>
+    </ion-card-header>
+    <ion-card-subtitle>
+      <ion-list lines="none">
+        <ion-list-header>
+          <ion-label>Resources</ion-label>
+        </ion-list-header>
+
+        <ion-item href="">
+          <ion-icon slot="start" color="medium" name="book"></ion-icon>
+          <ion-label>NOMBRE {{pais.name}}</ion-label>
+        </ion-item>
+
+        <ion-item href="">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>CAPITAL {{pais.capital}}</ion-label>
+          </ion-item>
+
+          <ion-item href="">
+              <ion-icon slot="start" color="medium" name="book"></ion-icon>
+              <ion-label>REGION {{pais.region}}</ion-label>
+            </ion-item>
+
+            <ion-item href="">
+                <ion-icon slot="start" color="medium" name="book"></ion-icon>
+                <ion-label>SUBREGION {{pais.subregion}}</ion-label>
+              </ion-item>
+      </ion-list>
+    </ion-card-subtitle>
+  </ion-card-content>
+</ion-content>

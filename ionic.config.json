@@ -1,0 +1,7 @@
+{
+  "name": "manejoAppi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
